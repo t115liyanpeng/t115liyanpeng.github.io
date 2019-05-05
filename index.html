@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./js/layui/css/layui.css" media="all">
   <style>
     #nav_left {
-      float: left;
+     
       height: 30px;
       width: 100%;
     }
@@ -37,32 +37,51 @@
 
     #contianer_left {
       float: left;
-      width: 260px;
-      height: 100px;
-      background-color: beige;
+      width: 15%;
+      height: 300px;
+      
     }
     #contianer_center{
       float: left;
-      width: 800px;
+      
+      width: 70%;
       height: 300px;
       
     }
 
     #contianer_right {
       float: right;
-      width: 300px;
-      height: 100px;
-      background-color: brown;
+      width: 15%;
+      height: 300px;
+      
     }
 
     #cont_img {
-      width: 260px;
+      width: 100%;
       height: 290px;
       margin-top: 5px;
+     
     }
 
     #expend {
-      width: 260px;
+      width: 100%;
+      
+    }
+    #lunbo{
+      margin-top: 38px;
+      width: 100%;
+      height: 290px;
+    }
+    #about{
+      margin-top: 38px;
+      width: 100%;
+      height: 120px;
+      
+    }
+    #ab_text{
+      color: bisque;
+      font-size: 22px;
+      margin: 10px;
     }
 
     body {
@@ -122,11 +141,38 @@
         </ul>
       </div>
       <div id="contianer_center">
-        <div>
-          
+       <!--轮播页面-->
+       <div id="lunbo" class="layui-carousel">
+        <div carousel-item>
+          <div>条目1</div>
+          <div>条目2</div>
+          <div>条目3</div>
+          <div>条目4</div>
+          <div>条目5</div>
         </div>
+       </div>
+
+       <script>
+        layui.use('carousel', function(){
+          var carousel = layui.carousel;
+          //建造实例
+          carousel.render({
+            elem: '#lunbo'
+            ,width: '100%' //设置容器宽度
+            ,arrow: 'always' //始终显示箭头
+            ,height:'262px'
+            //,anim: 'updown' //切换动画方式
+          });
+        });
+        </script>
+
       </div>
-      <div id="contianer_right"></div>
+      <div id="contianer_right">
+          <div id="about">
+             <p id="ab_text">关于作者:</p>
+             <p>暂时没有介绍</p>
+          </div>
+      </div>
 
     </div>
     <div id="foot">
