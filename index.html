@@ -79,7 +79,7 @@
       
     }
     #ab_text{
-      color: bisque;
+      color: #204264;
       font-size: 22px;
       margin: 10px;
     }
@@ -88,11 +88,37 @@
         width:100%;
         height:100%;
     }
-	
+	#author{
+		font-size:18px;
+		color:#204264;
+		margin-left:10px;
+		margin-top:5px;
+	}
+	.jianjie{
+		font-size:14px;
+		color:#204264;
+		margin-left:10px;
+		margin-top:3px;
+	}
+	#lunbo_one{
+		background:url(./img/lunbo_img/1.jpg);
+		repeat:no-repeat;
+		background-size:cover;
+	}
+	#lunbo_two{
+		background:url(./img/lunbo_img/2.jpg);
+		repeat:no-repeat;
+		background-size:cover;
+	}
+	#lunbo_three{
+		background:url(./img/lunbo_img/3.jpg);
+		repeat:no-repeat;
+		background-size:cover;
+	}
 	
     body {
       background: url(./img/background_img.png) no-repeat top left;
-      background-size: cover;
+      background-size:cover;
     }
   </style>
   <script src="./js/layui/layui.js" charset="utf-8"></script>
@@ -150,14 +176,14 @@
        <!--轮播页面-->
        <div id="lunbo" class="layui-carousel">
         <div carousel-item>
-            <div>
-                <img class="item" src="./img/lunbo_img/1.jpg" />
+            <div class="item" id="lunbo_one">
+               
             </div>
-          <div>
-              <img class="item" src="./img/lunbo_img/2.jpg" />
+          <div class="item" id="lunbo_two">
+              
 		  </div>
-          <div>
-              <img class="item" src="./img/lunbo_img/3.jpg" />
+          <div class="item" id="lunbo_three">
+             
 		  </div>
           
         </div>
@@ -181,7 +207,11 @@
       <div id="contianer_right">
           <div id="about">
              <p id="ab_text">关于作者:</p>
-             <p>暂时没有介绍</p>
+             <p id="author">李艳朋</p>
+			 <p class="jianjie">90后白羊座程序员一枚</p>
+			 <p class="jianjie">使用的编程语言c#、golang</p>
+			 <p class="jianjie">兴趣爱好广泛，但都不精通，喜欢玩PS4</p>
+			 <p class="jianjie">现居北京</>
           </div>
       </div>
 
